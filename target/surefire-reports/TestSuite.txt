@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 48.777 sec <<< FAILURE! - in TestSuite
+lunchBrowser(com.test.Demo)  Time elapsed: 47.963 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+dons.xpi	INFO	Mapping firefox@getpocket.com to C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1524829634936	addons.xpi	INFO	Mapping followonsearch@mozilla.com to C:\Program Files\Mozilla Firefox\browser\features\followonsearch@mozilla.com.xpi
+1524829634936	addons.xpi	INFO	Mapping formautofill@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\formautofill@mozilla.org.xpi
+1524829634936	addons.xpi	INFO	Mapping onboarding@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\onboarding@mozilla.org.xpi
+1524829634936	addons.xpi	INFO	Mapping screenshots@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\screenshots@mozilla.org.xpi
+1524829634936	addons.xpi	INFO	Mapping shield-recipe-client@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\shield-recipe-client@mozilla.org.xpi
+1524829634936	addons.xpi	INFO	Mapping webcompat@mozilla.org to C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1524829634936	addons.xpi	DEBUG	Existing add-on activity-stream@mozilla.org in app-system-defaults
+1524829634938	addons.xpi	DEBUG	Existing add-on aushelper@mozilla.org in app-system-defaults
+1524829634938	addons.xpi	DEBUG	Existing add-on firefox@getpocket.com in app-system-defaults
+1524829634938	addons.xpi	DEBUG	Existing add-on followonsearch@mozilla.com in app-system-defaults
+1524829634940	addons.xpi	DEBUG	Existing add-on formautofill@mozilla.org in app-system-defaults
+1524829634940	addons.xpi	DEBUG	Existing add-on onboarding@mozilla.org in app-system-defaults
+1524829634940	addons.xpi	DEBUG	Existing add-on screenshots@mozilla.org in app-system-defaults
+1524829634940	addons.xpi	DEBUG	Existing add-on shield-recipe-client@mozilla.org in app-system-defaults
+1524829634940	addons.xpi	DEBUG	Existing add-on webcompat@mozilla.org in app-system-defaults
+1524829634942	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi
+1524829634942	addons.xpi	DEBUG	Existing add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} in app-global
+1524829634944	addons.xpi	DEBUG	Existing add-on light_plugin_448EC0843447455C9DA355B3C2811D6A@kaspersky.com in winreg-app-global
+1524829634944	addons.xpi	DEBUG	getInstallState changed: false, state: {}
+1524829652424	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.1
+1524829652424	addons.xpi	DEBUG	Calling bootstrap method shutdown on shield-recipe-client@mozilla.org version 80
+1524829652426	addons.xpi	DEBUG	Calling bootstrap method shutdown on screenshots@mozilla.org version 25.0.0
+1524829652442	addons.xpi	DEBUG	Calling bootstrap method shutdown on onboarding@mozilla.org version 1.0
+1524829652442	addons.xpi	DEBUG	Calling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1524829652444	addons.xpi	DEBUG	Calling bootstrap method shutdown on followonsearch@mozilla.com version 0.9.6
+1524829652444	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1524829652446	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 2.0
+1524829652448	addons.xpi	DEBUG	Calling bootstrap method shutdown on activity-stream@mozilla.org version 2018.02.17.0026-173e2795
+1524829652712	addons.manager	DEBUG	shutdown
+1524829652712	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1524829652712	addons.xpi	DEBUG	shutdown
+1524829652714	addons.xpi-utils	DEBUG	shutdown
+1524829652714	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1524829652714	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1524829652714	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1524829652714	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1524829652718	addons.manager	DEBUG	Async provider shutdown done
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-DIUIAJ9', ip: '192.168.0.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_172'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:216)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at com.test.Demo.lunchBrowser(Demo.java:21)
+
